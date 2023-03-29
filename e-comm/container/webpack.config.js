@@ -10,8 +10,10 @@ module.exports = {
         new ModuleFederationPlugin({
             name: 'container',
             remotes: {
-                products: 'products@http://localhost:8081/remoteEntry.js',
-                cart: 'cart@http://localhost:8082/remoteEntry.js'
+                // products: 'products@http://localhost:8081/remoteEntry.js',
+                // cart: 'cart@http://localhost:8082/remoteEntry.js'
+                // curriculumMap: 'curriculum_map@http://localhost:8002/remoteEntry.js',
+                curriculumMap: 'curriculum_map@https://mfe-ii-261.s3.amazonaws.com/remoteEntry.js'
             }
         }),
         new HtmlWebpackPlugin({
